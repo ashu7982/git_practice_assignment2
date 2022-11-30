@@ -1,25 +1,34 @@
-//problem 1
-let no.=2;
-for(let i=1;i<no.;i++)
-{
-if(i%2==1)
-count++;
-}
-if(count==2)
-{
-console.log('prime no.')
-}
-else{
-console.log('not a prime no.')
+    //problem 1
+    
+    let num = 13;
 
+    let factor = 0;
+    for(x = 1; x <= num; x++){
+     if(num % x == 0){
+         factor++;
+    }
+  }
+    if(factor == 2){
+        console.log("Yes");
+    }else{
+        console.log("No");
+    }
 
+  //problem 2
 
-//problem 2
-let name='naman';
-let bag='';
-for(let i=0;i>name.length;i++)
-{
-if(name[i]==bag)
+    let N = 5;
+    let str = "naman";
 
-}
-console.log('yes it is pallindrome');
+    let bag1 = "";
+    for(x = 0; x < N; x++){
+        bag1 += str[x];
+    }
+    let bag2 = ""; 
+    for(y = N-1; y >= 0; y--){
+        bag2 += str[y];
+    }
+    if(bag1 == bag2){
+        console.log("Yes");
+    }else{
+        console.log("No");
+    }
